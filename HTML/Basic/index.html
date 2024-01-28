@@ -41,24 +41,14 @@
         <li>Apple</li>
     </ol>
 
-
     <!--
-        Types of Unordered Lists in HTML
-        There are four main values of the list-style property that help us with this customization:
-
-LIST-STYLE	EFFECT
-none	-> There will not be any bullets appearing in front of the list item
-circle	-> A circular (hollow) bullet appears in front of the list item
-disc	-> This is the default filled circular bullet
-square	-> A filled square bullet appears in front of the list item
+        What if you do not want to order your list by number?
+        Instead, you want to order using the alphabet like A, B, C or a,b,c.
+        You can do these by specifying the value of the type attribute of the <ol> tag.
+            
+        The <ol> element has an interesting attribute called start.
+        You can specify a value to the start attribute to start the ordered list from a specific number.
     -->
-
-    <ul list-style="square">
-        <li>this is unordered list with Attribute squre</li>
-        <li>pineApple</li>
-        <li>Apple</li>
-    </ul>
-
 
     <ol type="I">
         <li>this is ordered list with Attribute</li>
@@ -66,6 +56,11 @@ square	-> A filled square bullet appears in front of the list item
         <li>Apple</li>
     </ol>
 
+    <ol type="A" start="M">
+        <li>this is ordered list with Attribute</li>
+        <li>pineApple</li>
+        <li>Apple</li>
+    </ol>
 
     <!--
         We can define a description list using the <dl> tag element.
