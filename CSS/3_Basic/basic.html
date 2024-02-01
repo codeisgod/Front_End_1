@@ -13,9 +13,48 @@
                 Class Selectors - Select elements with same class attribute value
                 ID selectors - Select element with a particular id
     -->
-    <style>  /* Internal CSS */
+    <!--
+        class Selector
+            If we want to style all instances of an HTML element differently, we use the class selector.
+            use the class selector for any element we specify the class attribute for that element
+
+            <h1 class="title">Red Title</h1>
+            <h1>Normal Title</h1>
+
+            Next, we use the .class notation in our CSS to select all the elements with the specified class 
+
+            <style>
+                .title {
+                    color: red;
+                }
+            </style>
+    -->
+    <!--
+        ID selectors
+            If we want to specifically select a particular element to change the styles?
+            We use the id selector to do that.
+            
+            <h2 class="text-red">Podcasts</h2>
+            <p class="text-red">Sample text</p>
+            <h2 id="books-heading">Books</h2>
+
+            Then in the styles we use the # symbol to select the item.
+            
+            <style>
+                .text-red {
+                color: red;
+                }
+                #books-heading {
+                color: blueviolet;
+                background-color: yellow;
+                }
+            </style>
+    -->
+    <style>
+        /* Internal CSS */
         article {
-            background-color: azure; color: #000;
+            background-color: azure;
+            color: #000;
         }
     </style>
 
