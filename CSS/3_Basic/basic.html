@@ -17,6 +17,7 @@
         class Selector
             If we want to style all instances of an HTML element differently, we use the class selector.
             use the class selector for any element we specify the class attribute for that element
+            class might be repeat
 
             <h1 class="title">Red Title</h1>
             <h1>Normal Title</h1>
@@ -33,6 +34,7 @@
         ID selectors
             If we want to specifically select a particular element to change the styles?
             We use the id selector to do that.
+            id should be unique
             
             <h2 class="text-red">Podcasts</h2>
             <p class="text-red">Sample text</p>
@@ -52,9 +54,19 @@
     -->
     <style>
         /* Internal CSS */
+
+        /*Element selector*/
         article {
             background-color: azure;
             color: #000;
+        }
+        /*ID selector*/
+        #one {
+            background-color: yellow;
+        }
+        /*class selector*/
+        .two {
+            background-color: burlywood;
         }
     </style>
 
@@ -92,7 +104,7 @@
         </ul>
     </nav>
 
-    <section style="color: #000;">
+    <section>
         <ol>
             <li>
                 <article>
@@ -114,7 +126,7 @@
             </li>
             <li>
                 <article>
-                    <h3 id="two">Atomic Habits</h3>
+                    <h3 id="two" class="two">Atomic Habits</h3>
                     <img src="https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg" width="256px"
                         height="400px" />
                     <h4>By James Clear</h4>
