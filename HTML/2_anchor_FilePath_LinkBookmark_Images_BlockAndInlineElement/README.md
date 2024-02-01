@@ -1,5 +1,4 @@
 Anchor tags are used for links, target attribute to define where to open the link.  
-
 Links can be relative or absolute.  
 Id attribute uniquely identifies an HTML Element.  
 '#' can be used in anchor tag href to link to a section using its id.  
