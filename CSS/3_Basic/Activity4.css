@@ -1,10 +1,9 @@
-
-      body {
-        background-color: orange;
-      }
-      .para {
-        color: green;
-      }
-      #para_unique {
-        background-color: white;
-      }
+body {
+background-color: orange;
+}
+.para {
+color: green;
+}
+#para_unique {
+background-color: white;
+}
