@@ -1,0 +1,68 @@
+<!--
+    If at any point you wish to override the properties
+ inherited from the parent 
+or due to specificity.
+We can use the !important property in CSS which overrides all the CSS rules.
+p {
+ color: gold !important;
+}
+
+p {
+ color: red;
+}
+We should avoid using !important since this messes with the predictability of our code.
+
+-->
+
+<!--
+    Cascading in CSS
+    "The process of combining several style sheets and resolving conflicts between them"
+
+    Finding the winner (Specificity summary)
+        Check for style rules in this order (first one present wins)
+            !important
+            Inline style
+            Id selector
+            Class selector
+            Element selector
+        Latest one in the stylesheet wins If there are multiple rules with the highest available specificity
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Activity</title>
+    <style>
+        main {
+            background-color: red !important;
+        }
+
+        .main {
+            background-color: blue;
+        }
+
+        #main {
+            background-color: green;
+        } 
+
+        .item {
+            color: red;
+        }
+        #item {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main" id="main">
+        <p>This is a para inside child</p>
+    </main>
+
+    <p class="item">Item 1</p>
+    <p class="item">Item 2</p>
+    <p id="item">Item 3</p>
+</body>
+
+</html>
