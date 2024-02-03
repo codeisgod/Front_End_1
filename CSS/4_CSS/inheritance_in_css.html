@@ -1,0 +1,35 @@
+<!--
+    Some properties are inherited down the HTML while others are not.
+        Styles that are inherited are generally related to the styling of the document text.
+            Example Fonts and colors
+
+        Styles that are not inherited are usually related to the appearance of elements.
+            Parameters for positioning, sizes, margins, backgrounds, and frames:
+            Example width, height, border, padding, margin, position, and others
+
+        Do not confuse this with the fact that block elements take all the available width
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> inheritance in css </title>
+    <style>
+        .parent {
+            color: steelblue;
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="parent">
+        <div class="child">
+            <p>This is a para inside child</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

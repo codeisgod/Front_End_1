@@ -1,0 +1,49 @@
+<!--
+    When two CSS rules are in conflict, it is resolved using the concept of specificity
+    More specific the selector, higher the preference
+    Hierarchy (from highest specificity to lowest)
+        Inline Styles
+        ID Selectors
+        Class Selectors
+        Element Selectors
+    When selectors of equal Specificity are in conflict - Lower (or latest) rule in the stylesheet wins
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Activity</title>
+    <style>
+        main {
+            background-color: red;
+        }
+
+        .main {
+            background-color: blue;
+        }
+
+        #main {
+            background-color: green;
+        } 
+
+        .item {
+            color: red;
+        }
+        #item {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main" id="main">
+        <p>This is a para inside child</p>
+    </main>
+
+    <p class="item">Item 1</p>
+    <p class="item">Item 2</p>
+    <p id="item">Item 3</p>
+</body>
+
+</html>
