@@ -1,0 +1,58 @@
+<!--
+    Open google.com and search for color picker, try moving the circle around and observe the values.
+
+    Colors in html are specified in a few different ways
+        Predefined Color Names - ~143 colors eg: “blue”
+        RGB - Red, Green, Blue 
+            eg: rgb(0, 0, 255) ==> blue
+        RGBA - Red, Green, Blue, Alpha Channel (for transparency) 
+            eg: rgb(0, 0, 255, 0.9)
+-->
+
+<!--
+    RGB Color
+        An RGB color value represents RED, GREEN, and BLUE colors
+            In CSS the RGB value for color property is defined with this formula
+                rgb(red, green, blue)
+            Each value ranging from 0 to 255
+                0 being the dimmest 
+                255 being the brightest value
+-->
+
+<!--
+    RGBA color
+        Like rgb(red, green, blue) function gives the color in Red, Green, and Blue.
+        RGBA is an extension of rgb
+            It is specified with formula
+            rgba(red, green, blue, alpha)
+        The alpha parameter is a number between 0.0 and 1.0
+            0.0 = fully transparent
+            1.0 = completely opaque (not transparent at all)
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>color in css</title>
+        <style>
+            .parent {
+                height: 256px;
+                background-color: rgb(255, 52, 33);
+            }
+            .child {
+
+                /* above color is in bottom of child comment below and experience*/
+                height: 128px;
+                background-color: rgb(15, 107, 255);
+                /*background-color: rgba(15, 107, 255, 0.4);*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child">
+                <p>This is a para inside child</p>
+            </div>
+        </div>
+    </body>
+</html>
