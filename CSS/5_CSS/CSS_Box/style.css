@@ -1,0 +1,24 @@
+/* .parent {
+    font-size: 9px;
+  }
+  .ems {
+    font-size: 1.5em;
+  }
+  .rems {
+    font-size: 1.5rem;
+  }
+   */
+
+   .twentyfive_vh {
+    height: 25vh;
+    background-color: red;
+  }
+  .fifty_vw {
+    width: 50vw;
+    background-color: green;
+  }
+  .parent {
+    width: 50%;
+    background-color: pink;
+  }
+  

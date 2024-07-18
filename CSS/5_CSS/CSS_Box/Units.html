@@ -1,0 +1,93 @@
+<!--
+    There are two types of units:
+Absolute 
+Relative  
+
+Absolute length displays content same on every device.
+Examples are - pixels (px)
+Physical units can also be mapped to pixels in CSS
+Inches (in)
+Centimeter (cm)
+Millimeter (mm)
+
+
+Relative units in CSS can be split into three major categories
+Font Relative Lengths - depend on the font size
+Example - em, rem, etc. 
+em -> element   rem -> root element
+// em depend on parent size => first take parent style as root element then change it to newest chaing elemnt -> it will multiply parent => if two times define multiply again and so on
+// rem => always take parent as root element -? multiply with parent
+
+Viewport Relative Lengths - depend on the size of the screen/viewport
+Example - vh, vw, vmin, vmax
+
+vh -> viewport height 
+vw -> viewport width
+
+Parent Relative Lengths - depend on the size of the parent.  // inheriteance
+Example - %
+
+
+
+Unit   Relative to
+em     Font-size of the current element. 1em = 16px = 12pt
+rem    Font-size of the root element (generally body or html)
+vh     1% of the viewport height , 100vh = 100% of the viewport height
+vw     1% of the viewport width, 100vw = 100% of viewport width
+%      Parent element
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+    <link rel="stylesheet" href="./style.css" />
+
+  </head>
+  <body>
+    <!--Absolute-->
+    <!-- <p style="font-size: 30px;">  
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et itaque, hic
+      accusantium, necessitatibus, quaerat accusamus sed ex soluta quas expedita
+      aperiam corporis veniam voluptatem ab! Voluptate fugit rerum recusandae
+      id?
+    </p>
+  
+    <div class="parent">   // relative 
+        <div class="ems">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <div class="ems">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <div class="ems">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <div class="rems">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <div class="rems">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <div class="rems">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div>
+        <div class="parent">50PX</div>
+        <div class="fifty_vw">50vh</div>
+        <div class="twentyfive_vh">25vh</div>
+      </div>
+      <div class="parent">
+        50PX
+        <div class="fifty_vw">50vh</div>
+        <div class="twentyfive_vh">25vh</div>
+      </div>
+  
+  </body>
+</html>
