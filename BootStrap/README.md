@@ -1,6 +1,6 @@
 # RESPONSIVE WEB DESIGN
 
-## Introduction to Responsive Web Design*
+## Introduction to Responsive Web Design
 <ol>
     <li>
         A responsive website "responds" according to the screen size it is being rendered on.
