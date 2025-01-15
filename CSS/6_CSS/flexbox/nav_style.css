@@ -1,0 +1,20 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+    align-items: center;
+}
+nav h2 {
+    margin-left: 1%;
+}
+nav ul {
+    display: flex;
+    margin-right: 1%;
+    min-width: 10rem;
+    justify-content: space-between;
+}
+nav ul li {
+    list-style: none;
+}  
