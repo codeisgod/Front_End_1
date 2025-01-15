@@ -4,7 +4,7 @@ A responsive website "responds" according to the screen size it is being rendere
 Designers generally provide mockups of a website which tell a developer how the website should look on different screens.
 To style the elements on the page depending on the screen size, we use the @media query in CSS.
 
-# Ground Rules of responsive design
+## Ground Rules of responsive design
 
 Use relative units (like rem, %) in place of absolute units (px, pt)
 Use fluid containers for content as much as you can (i.e. flexbox)
