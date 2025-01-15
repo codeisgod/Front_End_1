@@ -35,8 +35,4 @@
             </li>
         </ol>
     </li>
-    
-    
-    
-    Design Mobile First - Mobiles are generally single column → Less CSS to be written.
 </ol>
