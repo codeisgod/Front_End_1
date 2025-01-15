@@ -42,12 +42,12 @@
     <li>Breakpoints define the width of different screen sizes on which our website can be viewed.</li>
     <li>One way to think about breakpoints is → Starting with mobile, the "point" where your design starts to "break"</li>
     <li>There are some standard breakpoints used in CSS.</li>
-    ```
-    320px or 375px  -> Mobile Phones
-    480px  -> Small tablets
-    640px or 768px  -> Normal tablets
-    960px or 1024px ->  Laptops and Desktops
-    1280px -> Hi Resolution Laptops
-    ```
+    <ul>
+        <li>320px or 375px  -> Mobile Phones</li>
+        <li>480px  -> Small tablets</li>
+        <li>640px or 768px  -> Normal tablets</li>
+        <li>960px or 1024px ->  Laptops and Desktops</li>
+        <li>1280px -> Hi Resolution Laptops</li>
+    </ul>
     <li>We can conditionally define CSS for different breakpoints using CSS @media rule.</li>
 </ol> 
