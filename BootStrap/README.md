@@ -1,8 +1,9 @@
 # Introduction to Responsive Web Design*
-
-A responsive website "responds" according to the screen size it is being rendered on. <br>
-Designers generally provide mockups of a website which tell a developer how the website should look on different screens.
-To style the elements on the page depending on the screen size, we use the @media query in CSS.
+<ol>
+<li>A responsive website "responds" according to the screen size it is being rendered on.</li>
+<li>Designers generally provide mockups of a website which tell a developer how the website should look on different screens.</li>
+<li>To style the elements on the page depending on the screen size, we use the @media query in CSS.</li>
+</ol>
 
 ## Ground Rules of responsive design
 
