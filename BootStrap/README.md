@@ -27,7 +27,7 @@
    - `960px` or `1024px` -> Laptops and Desktops
    - `1280px`            -> Hi Resolution Laptops
 
-4. We can conditionally define CSS for different breakpoints using the CSS ``` @media ``` rule.
+4. We can conditionally define CSS for different breakpoints using the CSS ` @media ` rule.
 
 
 ### css at-rules
@@ -37,7 +37,8 @@
  @[KEYWORD] (RULE); 
 ```
 - There are many rules like 
-``` @import - to import a file inside a CSS file, 
+``` 
+@import - to import a file inside a CSS file, 
 @font-face - to define local/self-hosted fonts, 
 @keyframes - for animations
 ```
