@@ -54,16 +54,9 @@
 
 ### css at-rules
 
-<ul>
-    <li>
-        The at-rule is a statement that provides CSS with instructions to perform or how to behave
-        <br>
-        @[KEYWORD] (RULE);
-    </li>
-    <li>
-        There are many rules like @import - to import a file inside a CSS file, @font-face - to define local/self-hosted fonts, @keyframes - for animations
-    </li>
-</ul>
+- The at-rule is a statement that provides CSS with instructions to perform or how to behave
+``` @[KEYWORD] (RULE); ```
+- There are many rules like @import - to import a file inside a CSS file, @font-face - to define local/self-hosted fonts, @keyframes - for animations
 
 ### @media Rule
 
