@@ -53,3 +53,19 @@ To define breakpoints, we are particularly interested in the @media rule of CSS
     /*Styles for this media*/
     }
     ```
+- When moving towards larger screens from our small screen design, we can define breakpoints as a `media-feature` for a particular `media type`
+
+### Using @media Rule
+- We will use 375px (mobile), 768px (tablet), 1024px (laptops), and 1280px (hi-res laptops)
+- Define a `meta` tag in the head with `name="viewport"` like this to make your media queries work.
+```css
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+```
+- Use `min-width` to define your media queries
+- To define a breakpoint write a media query like ⬇️
+```css
+@media (min-width: 375px) {
+  /*Define Styles here*/
+}
+```
+- The above media query will allow you to define styles for screens with at least 375px of width
