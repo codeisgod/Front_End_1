@@ -50,4 +50,29 @@
         <li>1280px -> Hi Resolution Laptops</li>
     </ul>
     <li>We can conditionally define CSS for different breakpoints using CSS @media rule.</li>
-</ol> 
+</ol>
+
+### css at-rules
+
+<ul>
+    <li>
+        The at-rule is a statement that provides CSS with instructions to perform or how to behave
+        <br>
+        @[KEYWORD] (RULE);
+    </li>
+    <li>
+        There are many rules like @import - to import a file inside a CSS file, @font-face - to define local/self-hosted fonts, @keyframes - for animations
+    </li>
+</ul>
+
+### @media Rule
+
+To define breakpoints, we are particularly interested in the @media rule of CSS
+<ul>
+    <li>The @media rule allows us to define CSS for different "media"</li>
+    <li>It is written as <br>
+    @media [media-type] ([media-feature]) {
+    /*Styles for this media*/
+    }
+    </li>
+</ul>
