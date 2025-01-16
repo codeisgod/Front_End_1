@@ -71,8 +71,10 @@ To define breakpoints, we are particularly interested in the @media rule of CSS
 <ul>
     <li>The @media rule allows us to define CSS for different "media"</li>
     <li>It is written as <br>
-    @media [media-type] ([media-feature]) {
+    ```CSS
+    @media [media-type] ([media-feature]) { 
     /*Styles for this media*/
     }
+    ```
     </li>
 </ul>
