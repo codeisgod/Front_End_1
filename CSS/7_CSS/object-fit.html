@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .hero {
+            height: 16rem;
+        }
+
+        .hero img {
+            /* height: 100%;
+            width: 100%; */
+            /* by using height and width it sometime not exact fit image it will adjust image which is mot readable may be */
+            /* to avaoid this we can use object-fit property */
+            /* 
+            object-fit → prevent image from squishing i.e. maintaining its aspect ratio
+            object-fit: contain → Resize image to fit the given parent dimensions without clipping
+            object-fit: cover → Does the same thing as contain but image is clipped. 
+            */
+
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        nav {
+            color: #dde0e2;
+            background-color: #1a2634;
+            /*Add your css styles below this line*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        nav ul li {
+            /*list-style: none clears the 
+  default styles of • from list items*/
+            list-style: none;
+            /*Add your css styles below this line*/
+        }
+
+        nav ul li:hover {
+            color: #7b78ff;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            min-width: 10rem;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <img src="https://images.unsplash.com/photo-1632200786066-6d0ea88116b0?auto=format&fit=crop&w=934&q=80"
+                alt="image">
+        </div>
+        <nav>
+            <h2>Posts</h2>
+            <ul>
+                <li>Feed</li>
+                <li>Week</li>
+                <li>Month</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
