@@ -79,15 +79,19 @@ It allows us to leverage `pre-written CSS classes` which we can directly use out
 
 ## How to use BootStrap
 
-- [text](https://getbootstrap.com/)
+- [BootStrap](https://getbootstrap.com/)
 
 - under `head` tag use below code
 ```HTML
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 ```
 and under body tag use this Script (JS)
 ```HTML
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
-- To view above both written code 
+- To view above both written code, remove `min` from link 
+```
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.css
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.js
+```
