@@ -1,0 +1,121 @@
+<!-- flexbox is single_dimention -> either row or cloumn -->
+<!-- grid is work in row and cloumn -> two dimention -->
+
+<!-- 
+CSS Grid is a two-dimensional grid-based layout system.
+It helps place the rectangular elements on a web page in complex manners.
+A grid is made up of 6 important elements
+    Grid Container (Parent)
+    Grid Item (Children)
+    Grid Rows (the horizontal parts)
+    Grid Columns (the vertical parts)
+    Grid Lines - which divide the rows and columns
+    Grid Cell - Space between two adjacent row and two adjacent column grid lines
+-->
+
+<!-- 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <style>
+            .grid-container{
+                /* grid properties below this line */
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto auto auto;
+                /* grid properties above this line */
+            }
+
+            #item-1 {
+                background-color: rgb(108, 175, 234);
+                /* grid properties below this line */
+                /* grid-row-start: 1;
+                grid-row-end: 2; */
+                grid-column-start: 1;
+                grid-column-end: 3;
+                /* grid properties above this line */
+            }
+
+            #item-2 {
+                background-color: blue;
+                /* grid properties below this line */
+                grid-row-start: 1;
+                grid-row-end: 4;
+                grid-column-start: 3;
+                grid-column-end: 4;
+                /* grid properties above this line */
+            }
+
+            #item-3 {
+                background-color: aqua;
+                /* grid properties below this line */
+                grid-row-start: 2;
+                grid-row-end: 5;
+                /* grid-column-start: 1;
+                grid-column-end: 2; */
+                /* grid properties above this line */
+            }
+
+            #item-4 {
+                background-color: blueviolet;
+                /* grid properties below this line */
+                /* grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 3; */
+                /* grid properties above this line */
+            }
+
+            #item-5 {
+                background-color: brown;
+                /* grid properties below this line */
+                /* grid-row-start: 3;
+                grid-row-end: 4;
+                grid-column-start: 2;
+                grid-column-end: 3; */
+                /* grid properties above this line */
+            }
+
+            #item-6 {
+                background-color: rgb(15, 68, 68);
+                /* grid properties below this line */
+                /* grid-row-start: 4;
+                grid-row-end: 5; */
+                grid-column-start: 2;
+                grid-column-end: 4;
+                /* grid properties above this line */
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Grid</h1>
+        </header>
+        <div class="grid-container">
+            <div class="grid-item" id="item-1">
+                <p>1</p>
+            </div>
+            <div class="grid-item" id="item-2">
+                <p>2</p>
+            </div>
+            <div class="grid-item" id="item-3">
+                <p>3</p>
+            </div>
+            <div class="grid-item" id="item-4">
+                <p>4</p>
+            </div>
+            <div class="grid-item" id="item-5">
+                <p>5</p>
+            </div>
+            <div class="grid-item" id="item-6">
+                <p>6</p>
+            </div>
+        </div>
+    </body>
+</html>
