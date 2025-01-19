@@ -13,12 +13,130 @@ A grid is made up of 6 important elements
     Grid Cell - Space between two adjacent row and two adjacent column grid lines
 -->
 
-<!DOCTYPE html>
-<html>
-    <head>
+<!-- 
 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <style>
+            .grid-container{
+                /* grid properties below this line */
+
+                display: grid;  /* first need to put in parent*/
+                /* grid-template-rows: 8rem 8rem;   */
+                /* two rows of 8rem each*/
+                /* grid-template-columns: 8rem 8rem 8rem;  */
+                /*3 column of 8 rem each*/
+
+                /* grid-template-rows: 8rem 2rem; */ 
+                /* two rows -> first row of 8rem -> second row of 2 rem*/
+
+                /* grid-template-columns: 8rem 6rem 5rem; */ 
+                /*3 column of 8 rem, 6 rem, 5rem resp*/
+
+                /* we can perform multiple way */
+
+                /* grid-gap: 10px;  */
+                /* provide row and column gap in grid */
+
+                /* grid-row-gap: 10px;
+                grid-column-gap: 30px; */
+
+                /* grid-template-rows: 8rem 8rem; 
+                grid-template-columns: 33.33% 33.33% 33.33%; */
+
+                /* grid-template-rows: auto auto; 
+                grid-template-columns: auto auto auto;  */
+                /* fit to screen */
+
+                /* grid-template-rows: auto auto; 
+                grid-template-columns: 1fr 2fr 1fr;  */
+                /* convert 100 % to sum of fr then according ratio */
+
+                grid-template-rows: auto auto; 
+                grid-template-columns: 1fr 1fr 1fr; 
+
+                /* grid properties above this line */
+            }
+
+            #item-1 {
+                background-color: rgb(108, 175, 234);
+                /* grid properties below this line */
+
+                /* grid-row-start: 1; */
+                /* it start with grid line 1 */
+                /* grid-row-end: 2; */
+                /* it start with grid line 2 */
+
+                grid-row-start: 1;
+                /* it start with grid line 1 */
+                grid-row-end: 3;
+                /* it start with grid line 2 */
+
+                grid-column-start: 1;
+                grid-column-end: 3;
+                /* grid properties above this line */
+            }
+
+            #item-2 {
+                background-color: blue;
+                /* grid properties below this line */
+                /* grid properties above this line */
+            }
+
+            #item-3 {
+                background-color: aqua;
+                /* grid properties below this line */
+                /* grid properties above this line */
+            }
+
+            #item-4 {
+                background-color: blueviolet;
+                /* grid properties below this line */
+                /* grid properties above this line */
+            }
+
+            #item-5 {
+                background-color: brown;
+                /* grid properties below this line */
+                /* grid properties above this line */
+            }
+
+            #item-6 {
+                background-color: rgb(15, 68, 68);
+                /* grid properties below this line */
+                /* grid properties above this line */
+            }
+
+        </style>
     </head>
     <body>
-
+        <header>
+            <h1>CSS Grid</h1>
+        </header>
+        <div class="grid-container">
+            <div class="grid-item" id="item-1">
+                <p>1</p>
+            </div>
+            <div class="grid-item" id="item-2">
+                <p>2</p>
+            </div>
+            <div class="grid-item" id="item-3">
+                <p>3</p>
+            </div>
+            <div class="grid-item" id="item-4">
+                <p>4</p>
+            </div>
+            <div class="grid-item" id="item-5">
+                <p>5</p>
+            </div>
+            <div class="grid-item" id="item-6">
+                <p>6</p>
+            </div>
+        </div>
     </body>
 </html>
