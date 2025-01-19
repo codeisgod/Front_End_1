@@ -70,16 +70,32 @@ To define breakpoints, we are particularly interested in the @media rule of CSS
 ```
 - The above media query will allow you to define styles for screens with at least 375px of width
 
-## BootStrap
+# BootStrap
 
 - Bootstrap is a `CSS framework` by Twitter
 It allows us to leverage `pre-written CSS classes` which we can directly use out-of-the-box
 - It also gives us shorthand notations for common CSS properties like `flex, grid, margin, padding` etc.
 - Bootstrap has a lot of components built in with their own CSS (and functionality using JS)
 
+## Structure of BootStrap
+- Bootstrap primarily works on the concept of CSS class selectors.
+- You can attach multiple classes to any HTML element, separated by spaces.
+- The structure can be mapped down to 4 main parts
+   - Layout - Containers, Grid, Columns, Breakpoints, Z-Index etc
+   - Content - Typography, images etc
+   - Components - Pre Built components like cards, navbar, carousel, buttons etc
+   - Utilities - Your plain CSS which had been writing up till now.
+
 ## How to use BootStrap
 
 - [BootStrap](https://getbootstrap.com/)
+- [BootStrap Introduction](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+
+- Bootstrap requires two meta tags like charset and viewport which allow Bootstrap to work responsively on different screens.
+```HTML
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
 
 - under `head` tag use below code
 ```HTML
@@ -94,4 +110,23 @@ and under body tag use this Script (JS)
 ```
 https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.css
 https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.js
+```
+
+- bootstrap import two things CSS and related JavaScript
+
+### Example Code
+```HTML
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
 ```
