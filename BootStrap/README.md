@@ -79,7 +79,7 @@ It allows us to leverage `pre-written CSS classes` which we can directly use out
 
 ## How to use BootStrap
 
-- `![text](https://getbootstrap.com/)`
+- [text](https://getbootstrap.com/)
 
 - under `head` tag use below code
 ```HTML
