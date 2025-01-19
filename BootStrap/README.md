@@ -69,3 +69,21 @@ To define breakpoints, we are particularly interested in the @media rule of CSS
 }
 ```
 - The above media query will allow you to define styles for screens with at least 375px of width
+
+## BootStrap
+
+- Bootstrap is a `CSS framework` by Twitter
+It allows us to leverage `pre-written CSS classes` which we can directly use out-of-the-box
+- It also gives us shorthand notations for common CSS properties like `flex, grid, margin, padding` etc.
+- Bootstrap has a lot of components built in with their own CSS (and functionality using JS)
+
+## How to use BootStrap
+
+- under `head` tag use below code
+```HTML
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.css" rel="stylesheet">
+```
+and under body tag use this Script (JS)
+```HTML
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+```

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title> Media Responsive CSS </title>
+        <style>
+            #box {
+                background-color: blueviolet;
+                width: 200px;
+                height: 200px;
+                color: white;
+            }
+
+            /* min-width -> id the minimum width at which a style will start to applied */
+            /* max-width -> it will apply style till max */
+            /* (max-width: 479px ) -> it will apply style till max 479px*/
+
+            /* SmartPhones Portrait */
+            @media (min-width: 300px) {
+                #box {
+                    background-color: aqua;
+                }
+            }
+
+            /* SmartPhones LandScape */
+            @media (min-width: 480px) {
+                #box {
+                    background-color: blue;
+                }
+            }
+
+            /* Tablets Portrait */
+            @media (min-width: 768px) {
+                #box {
+                    background-color: purple;
+                }
+            }
+
+            /* Tablets Landscape / Desktop */
+            @media (min-width: 1024px) {
+                #box {
+                    background-color: blueviolet;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box"> Box 1 </div>
+    </body>
+</html>
