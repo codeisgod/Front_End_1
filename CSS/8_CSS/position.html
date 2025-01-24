@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Positioning in css
+        </title>
+
+        <!-- 
+            Elements are then positioned using top, bottom, left and right properties. however these properties will not work unless the positioned properties set first
+        -->
+
+        <!-- 
+            Static:
+            - Static positioned element are not affected by the top, bottom, left, and right properties.
+            - HTML elements are positioned static by default
+            - it has no effect
+            - it id default property
+        -->
+
+        <!-- 
+            Relative: It makes it come out of normal,  document flow space get blocked
+            - An element with position: relative is positioned to its normal position.
+            - Setting the top, right, bottom, left properties will cause it to be adjusted away from its normal positioned. other contenmt will not be adjusted to fit into any gap left by the element
+        -->
+
+        <!-- 
+            Absolute:
+            - An element with position: absolute; is positioned relative to the nearest positioned ancestor. However; if an absolute positioned lemnet has no positioned ancestor (parent), iy uses the document body, and moves along with page scrolling.
+            - Absolute positioned elements are removed from the normal flow and can overlap elements.
+            - space are available to be utilised for other element.
+        -->
+
+        <!-- 
+            Fixed:
+            - An element with position: fixed; is positioned relative to the viewport, which means it always stays the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+            - Try setting height of parent to 200vh and try scrolling, fixed stick to top where absolute moves
+        -->
+
+        <!-- 
+            Sticky: Relative + Fixed
+            - A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place 
+            - (like position: fixed).
+        -->
+
+        <style>
+            .parent {
+                background-color: cyan;
+                padding: 20px;
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                height: 300vh;
+            }
+
+            #child1 {
+                background-color: red;
+                color: white;
+                height: 150px;
+
+                /* position: static;
+                top: 20px;
+                left: 20px; */
+                /* top and left will not work as static positioned apply it first */
+
+                /* top: 100px;
+                left: 20px; */
+                /* it will not work here as well because postion: static is defined in css by default */
+
+                /* position: relative;
+                top: 20px;
+                left: 20px; */
+                /* it will work and adjusted to left and right 
+                it will also overlap -> means goes in other div as well */
+
+
+                /* position: absolute;
+                top: 20px;
+                left: 20px; */
+                /* it will move but next div can takes it place
+                it will overlap
+                it will take only space which required by body or if we provide height and weight */
+
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                /* fixed to screen at perticular position
+                it may overlap
+                it will move but next div can takes it place
+                it will take only space which required by body or if we provide height and weight */
+
+                /* position: sticky;
+                top: 20px;
+                left: 20px; */
+            }
+
+            #child2 {
+                background-color: white;
+                height: 150px;
+            }
+
+            #child3 {
+                background-color: green;
+                color: white;
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div id="child1"> Red </div>
+            <div id="child2"> White </div>
+            <div id="child3"> Green </div>
+        </div>
+    </body>
+</html>
